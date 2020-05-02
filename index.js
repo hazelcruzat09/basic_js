@@ -74,6 +74,13 @@ const thirdSoftDrinks = {
 firstSoftDrinks.name = "Sprite";
 console.log(`firstSoftDrinks: ${firstSoftDrinks.name}\n secondSoftDrinks: ${secondSoftDrinks.name}\n thirdSoftDrinks: ${thirdSoftDrinks.name}`);
 
+//Refreshing Array Functions
+const numbers = [1,2,3,4,5]
+const processedNumbers = numbers.map((elem) => elem*2);
+
+console.log(numbers);
+console.log(processedNumbers);
+
 
 
 
