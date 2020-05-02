@@ -55,4 +55,26 @@ console.log(c);
 const {weight} = defaultPerson;
 console.log(weight);
 
+//NOTE -> premitive types creates a copy while classes references the original value by using a reference pointer
+const number1 = 1;
+const number2 = number1;
+number1 = 2;
+console.log(`number1: ${number1}\n number2: ${number2}`);
+const firstSoftDrinks = {
+  name: "Coke"
+}
+const secondSoftDrinks = firstSoftDrinks;
+firstSoftDrinks.name = "Royal";
+console.log(`firstSoftDrinks: ${firstSoftDrinks.name}\n secondSoftDrinks: ${secondSoftDrinks.name}`);
+
+//in order to create a copy for classes a new element must be created or Spread can be used as presented below
+const thirdSoftDrinks = {
+  ...firstSoftDrinks
+}
+firstSoftDrinks.name = "Sprite";
+console.log(`firstSoftDrinks: ${firstSoftDrinks.name}\n secondSoftDrinks: ${secondSoftDrinks.name}\n thirdSoftDrinks: ${thirdSoftDrinks.name}`);
+
+
+
+
 
