@@ -33,7 +33,9 @@ const defaultFilipino = {
 
 const defaultPerson = {
   ...defaultFilipino,
-  age: 24
+  age: 24,
+  height: 5,
+  weight: 60
 }
 
 console.log(defaultPerson);
@@ -42,5 +44,15 @@ console.log(defaultPerson);
 const filter = (...params) => params.filter(elem => elem === 1);
 
 console.log(filter(1,2,3));
+
+//Destructing
+//Array Destructing
+const [a, , c] = ["Hazel", "Mica", "Akhil"];
+console.log(a);
+console.log(c);
+
+//Object Destructing
+const {weight} = defaultPerson;
+console.log(weight);
 
 
