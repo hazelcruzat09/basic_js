@@ -26,7 +26,7 @@ const updatedNumber = [...origNumber, 4, 5, 6];
 
 console.log(updatedNumber);
 
-//Rest
+//another sample of spread usage
 const defaultFilipino = {
   name: 'Juan Dela Cruz'
 }
@@ -37,3 +37,10 @@ const defaultPerson = {
 }
 
 console.log(defaultPerson);
+
+//Rest
+const filter = (...params) => params.filter(elem => elem === 1);
+
+console.log(filter(1,2,3));
+
+
